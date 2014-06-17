@@ -26,9 +26,12 @@ this app:
         OAuth.initialize('vMLd_AIdnpZtRPRH61n9z4j8RS8');
 
         //Using popup (option 1)
-        OAuth.popup('github', function(error, result) {
+        //OAuth.popup('github', function(error, result) {
+        OAuth.redirect('github','http://localhost:8000');
+        Oauth.callback('github',function(error, result) { 
           //handle error with error
           //use result.access_token in your API request
+
 
           var apiUrl = "https://api.github.com";
           var tokenUrl ='?access_token='+result.access_token;
