@@ -32,7 +32,7 @@ Sign in button:
           //use result.access_token in your API request
 
         //Using redirection (option 2)
-        OAuth.redirect('github', "http://soundswarm.github.io/repoman");
+        //OAuth.redirect('github', "http://soundswarm.github.io/repoman");
         OAuth.callback('github', function(error, result) {
           var apiUrl = "https://api.github.com";
           var tokenUrl ='?access_token='+result.access_token;
