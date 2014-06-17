@@ -29,9 +29,6 @@ this app:
         OAuth.popup('github', function(error, result) {
           //handle error with error
           //use result.access_token in your API request
-        //OAuth.redirect('github', "http://soundswarm.gihtub.io/repoman") ;
-
-        OAuth.callback(function(error, result) {   
 
           var apiUrl = "https://api.github.com";
           var tokenUrl ='?access_token='+result.access_token;
