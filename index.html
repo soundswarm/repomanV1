@@ -1,11 +1,3 @@
-<!--
-Sign in button:
-  sign in to Github button: 1 C    https://github.com/ddo/oauth-1.0a,   https://github.com/oauth-io/oauth-js
-  Enter repo name input and Make repo: 1 C 
-    enter name(s) of github members to invite to repo
-      http://www.sitepoint.com/5-awesome-jquery-drop-boxes/
-!-->
-
 <!DOCTYPE html>
 <html lang="en" >
   <head>
@@ -23,16 +15,14 @@ Sign in button:
   <body>
     <script>
       $(document).ready( function () {
-
-
         //Using popup (option 1)
         //OAuth.popup('github', function(error, result) {
           //handle error with error
           //use result.access_token in your API request
-        OAuth.callback(function(error, result) {
-  
-          OAuth.redirect('github', "http://soundswarm.gihtub.io/repoman" ;
-          OAuth.initialize('vMLd_AIdnpZtRPRH61n9z4j8RS8');
+        OAuth.initialize('vMLd_AIdnpZtRPRH61n9z4j8RS8');
+        OAuth.redirect('github', "http://soundswarm.gihtub.io/repoman") ;
+
+        OAuth.callback(function(error, result) {   
 
           var apiUrl = "https://api.github.com";
           var tokenUrl ='?access_token='+result.access_token;
