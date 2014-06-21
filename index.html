@@ -29,16 +29,6 @@ this app:
         //oauth.io authentication
         OAuth.initialize('vMLd_AIdnpZtRPRH61n9z4j8RS8', {cache: true});
 
-        //$('.signIn').on('click', function(){
-        //Using popup (option 1)
-         /*if(result) {
-              $('.signIn').hide();
-              $('#createRepo, #addUser, #listRepos').fadeIn();
-            } else {
-              $('.signIn').fadeIn();
-              $('#createRepo, #addUser, #listRepos').hide();
-
-            }*/
           if(OAuth.create('github')) {
             console.log(OAuth.create('github'));
               $('.signIn').hide();
