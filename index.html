@@ -121,7 +121,7 @@ this app:
                 var repos = $("input[type=checkbox]:checked");
                 if(repos.length == 0) {
                   $('.error').hide();
-                  $('#userName').append('<div class="error">check the repos to which you want to add a user</div>').fadeIn();
+                  $('#userName').append('<div class="error">check the repos to which you want to add a collaborator</div>').fadeIn();
                 } else {
                   for(var i=0; i<repos.length; i++) {
                     $('.error').hide();
