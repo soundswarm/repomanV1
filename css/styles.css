@@ -28,12 +28,12 @@
 }
 
 .signIn {
-  position: absolute;
-  top: 50%;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
   width: 40%;
+  text-align: center;
 }
 
 
