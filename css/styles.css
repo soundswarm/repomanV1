@@ -36,4 +36,8 @@
   text-align: center;
 }
 
+.button-block, .signIn {
+  width: 200px;
+}
+
 
